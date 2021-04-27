@@ -1,0 +1,16 @@
+
+    // Complete the reverseArray function below.
+    static int[] reverseArray(int[] a) {
+        var start = 0;
+        var end = a.Length - 1;
+        
+        while(start < end){
+            int temp = a[start];
+            a[start] = a[end];
+            a[end] = temp;
+            start = start + 1;
+            end = end - 1;
+        }
+        return a;
+
+    }
